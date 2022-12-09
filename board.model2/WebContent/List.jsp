@@ -55,7 +55,11 @@
 					<td>${ row.name }</td>
 					<td>${ row.visitcount }</td>
 					<td>${ row.postdate }</td>
-					<td><a href="download.do?ofile=${ row.ofile }&sfile=${ row.sfile }&idx=${ row.idx}">[Down]</a></td>
+					<td>
+					<c:if test="${ not empty row.ofile }">
+					<a href="download.do?ofile=${ row.ofile }&sfile=${ row.sfile }&idx=${ row.idx }">[DOWN]</a>
+					</c:if>
+					</td>
 				</tr>
 			</c:forEach>
 		</c:otherwise>

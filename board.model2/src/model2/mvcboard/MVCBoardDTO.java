@@ -19,4 +19,5 @@ public class MVCBoardDTO {
 	private String pass;
 	private int visitcount;
 	
+	
 }
